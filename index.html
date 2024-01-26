@@ -55,7 +55,7 @@
         </style>
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle custom-oval">
         
-        <h1 class="text-light"><a href="index.html">Oleksandr Fedosieiev</a></h1>
+        <h1 class="text-light"><a href="index.html">Sofia Fedosieiev</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
@@ -87,7 +87,27 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <style>
+              .blurred-border {
+                  position: relative;
+                  overflow: hidden;
+                  border-radius: 20px; /* можна змінювати за потребою */
+              }
+      
+              .blurred-border::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 50;
+                  left: 0;
+                  z-index: -1;
+                  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* можна змінювати кольори та прозорість */
+                  border-radius: inherit;
+                  filter: blur(10px); /* Задайте рівень розмиття, який вам подобається */
+              }
+          </style>
+          <img src="assets/img/profile-img.jpg" class="img-fluid blurred-border" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Oleksandr Fedosieiev - QA Data Engineer.</h3>
@@ -139,10 +159,31 @@ Eager for new challenges and committed to ongoing professional growth, I am seek
     <section id="facts" class="facts">
       <div class="container">
 
-        <div class="section-title">
+        <style>
+          .logo-image {
+              width: 100px; /* ваш фіксований розмір */
+              height: auto; /* зберігає пропорції, щоб не спотворювати зображення */
+              margin-right: 10px; /* необов'язковий відступ між логотипами */
+          }
+      </style>
+      
+      <div class="section-title">
           <h2>My stack</h2>
           <p>SVN / Git / Chrome Dev Tools / SQL / PL/SQL / Oracle / ETL Informatica Power Center /PowerBI / Android / iOS / MacOS / Windows /</p>
-        </div>
+      
+          <!-- Додайте логотипи компаній тут -->
+          <img src="assets/img/Oracle.png" alt="Логотип компанії 1" class="logo-image">
+          <img src="assets/img/Informatica.jpeg" alt="Логотип компанії 2" class="logo-image">
+          <img src="assets/img/PowerBI.png" alt="Логотип компанії 3" class="logo-image">
+          <img src="assets/img/GitHUB.png" alt="Логотип компанії 4" class="logo-image">
+          <img src="assets/img/SVN.png" alt="Логотип компанії 5" class="logo-image">
+          <img src="assets/img/Android.png" alt="Логотип компанії 6" class="logo-image">
+          <img src="assets/img/iOS.jpg" alt="Логотип компанії 7" class="logo-image">
+          <img src="assets/img/Win.png" alt="Логотип компанії 8" class="logo-image">
+          <img src="assets/img/Jira.png" alt="Логотип компанії 9" class="logo-image">
+          <!-- Додайте інші логотипи за аналогією -->
+      
+      </div>
 
         <div class="row no-gutters">
 

@@ -55,7 +55,7 @@
         </style>
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle custom-oval">
         
-        <h1 class="text-light"><a href="index.html">Sofia Fedosieiev</a></h1>
+        <h1 class="text-light"><a href="index.html">Oleksandr Fedosieiev</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
@@ -93,18 +93,18 @@
                   overflow: hidden;
                   border-radius: 20px; /* можна змінювати за потребою */
               }
-      
+          
               .blurred-border::before {
                   content: "";
                   position: absolute;
                   top: 0;
                   right: 0;
-                  bottom: 50;
+                  bottom: 0;
                   left: 0;
                   z-index: -1;
                   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* можна змінювати кольори та прозорість */
-                  border-radius: inherit;
                   filter: blur(10px); /* Задайте рівень розмиття, який вам подобається */
+                  border-radius: inherit;
               }
           </style>
           <img src="assets/img/profile-img.jpg" class="img-fluid blurred-border" alt="">
